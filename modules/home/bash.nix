@@ -29,6 +29,7 @@
       ls = "eza";
       cd = "z";
       grep = "rg";
+      tree = "eza -T";
     };
   };
 }

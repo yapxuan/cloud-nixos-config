@@ -24,9 +24,7 @@
     extraGroups = [
       "yapx"
       "wheel"
-      "libvirtd"
       "users"
-      "networkmanager"
     ];
   };
   environment.pathsToLink = [ "/etc/profiles/per-user/yapx/share/zsh" ];

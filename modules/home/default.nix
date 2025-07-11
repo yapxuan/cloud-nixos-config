@@ -3,7 +3,7 @@
 {
   imports = [
     ./bash.nix
-   ./helix.nix
+    ./helix.nix
     ./homepkgs.nix
     ./nh.nix
     ./starship.nix

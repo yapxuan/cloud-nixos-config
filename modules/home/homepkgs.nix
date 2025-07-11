@@ -23,7 +23,6 @@
     # misc
     file
     which
-    # tree
     gnused
     gnutar
     gawk
