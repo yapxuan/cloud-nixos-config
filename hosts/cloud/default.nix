@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware.nix
-    ./virtualmachine.nix
+    ./aws.nix
     ../../modules/core
   ];
 }
