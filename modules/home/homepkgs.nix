@@ -29,6 +29,7 @@
     zstd
     gnupg
     tealdeer
+    vscode-langservers-extracted
 
     # nix related
     #
