@@ -17,7 +17,7 @@
     {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-rfc-style;
       nixosConfigurations = {
-        "ip-172-31-20-139.ap-southeast-1.compute.internal" = nixpkgs.lib.nixosSystem {
+        aws-cloud = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
