@@ -9,5 +9,6 @@
     fzf
     yazi
     helix
+    cachix
   ];
 }

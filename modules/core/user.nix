@@ -28,4 +28,8 @@
     ];
   };
   environment.pathsToLink = [ "/etc/profiles/per-user/yapx/share/zsh" ];
+  nix.settings.trusted-users = [
+    "root"
+    "yapx"
+  ];
 }
