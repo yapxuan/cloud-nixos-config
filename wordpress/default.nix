@@ -1,13 +1,15 @@
 { pkgs, ... }:
 
 {
-  services.wordpress.sites = {
+  services.wordpress = {
     webserver = "nginx";
-    "lab0.dpdns.org" = {
-      plugins = {
-        inherit (pkgs.wordpressPackages.plugins)
-          wordpress-seo
-          ;
+    sites = {
+      "lab0.dpdns.org" = {
+        plugins = {
+          inherit (pkgs.wordpressPackages.plugins)
+            wordpress-seo
+            ;
+        };
       };
     };
   };
