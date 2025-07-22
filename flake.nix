@@ -22,8 +22,8 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/cloud
-            # ./nginx
-            ./wordpress
+            ./nginx
+            # ./wordpress
           ];
         };
       };
