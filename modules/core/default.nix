@@ -7,5 +7,6 @@
     ./systempkgs.nix
     ./system.nix
     ./user.nix
+    ./direnv.nix
   ];
 }

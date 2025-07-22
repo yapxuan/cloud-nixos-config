@@ -20,12 +20,14 @@ in
     enable = true;
     recommendedProxySettings = true;
     recommendedGzipSettings = true;
+    recommendedOptimisation = true;
+    recommendedTlsSettings = true;
 
     virtualHosts = {
       "lab0.dpdns.org" = {
         forceSSL = true;
         enableACME = true;
-        root = "/var/www/nginx";
+        root = "/var/www/lab0.dpdns.org";
         locations."/" = {
           index = "index.html";
         };
@@ -34,9 +36,9 @@ in
   };
 
   system.activationScripts.copyWebContent.text = ''
-    mkdir -p /var/www/nginx
-    cp -r ${staticSite}/* /var/www/nginx/
-    chmod -R 755 /var/www/nginx
+    mkdir -p /var/www/lab0.dpdns.org
+    cp -r ${staticSite}/* /var/www/lab0.dpdns.org/
+    chmod -R 755 /var/www/lab0.dpdns.org
   '';
 
   security.acme = {

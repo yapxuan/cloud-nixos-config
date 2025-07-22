@@ -23,7 +23,6 @@
           modules = [
             ./hosts/cloud
             ./nginx
-            # ./wordpress
           ];
         };
       };

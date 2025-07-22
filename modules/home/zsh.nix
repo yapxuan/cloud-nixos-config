@@ -33,6 +33,7 @@
             ;;
         esac
       }
+      eval "$(direnv hook zsh)"
     '';
 
     shellAliases = {
